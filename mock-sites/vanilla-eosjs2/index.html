@@ -137,7 +137,7 @@
 		let randomString = '';
 		for(let i = 0; i < 12; i++) randomString += getRandom();
 		console.log('randomString', randomString);
-		await scatter.authenticate(randomString).then(res => console.log('authenticate:',res));
+		await scatter.authenticate(randomString).then(res => alert('authenticate:'+res));
 	};
 
 	const tryTransfer = async api => {
